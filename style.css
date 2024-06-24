@@ -1,0 +1,151 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.navbar .logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: linear-gradient(45deg, #0bf112, #00ff55);
+}
+
+.navbar .nav {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0; 
+    justify-content: flex-end;
+}
+
+
+
+.navbar .nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.header {
+    position: relative;
+    background: url(./background.jpg) no-repeat center center/cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.header .container {
+    max-width: 800px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.header h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.header p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    background: linear-gradient(45deg, #0bf112, #00ff55);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.contact-btn a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-btn:hover {
+    background: linear-gradient(45deg, #00ff15, #47ff50);
+    transform: scale(1.05);
+}
+
+.boxes {
+    padding: 50px 35px;
+    background: #333;
+}
+
+.boxes .container {
+    display: flex;
+    gap: 20px;
+}
+
+.box {
+    background: linear-gradient(45deg, #0bf112, #00ff55);
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1;
+    text-align: center;
+}
+
+.box h2 {
+    margin-bottom: 10px;
+}
+
+.box p {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 480px) {
+    .header p {
+        font-size: 12px;
+    }
+    .header h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .navbar .logo {
+        font-size: 16px;
+    }
+    .navbar .nav li a {
+        font-size: 10px;
+    }
+    .contact-btn {
+        padding: 10px 5px;
+        font-size: 14px;
+    }
+    .boxes .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .header{
+        height: 50vh;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .header{
+        height: 50vh;
+    }
+  }
+
+  
